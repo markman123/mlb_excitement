@@ -34,7 +34,8 @@ def get_wpa_for_day(date):
     for game in sched:
         double_header_flag = double_header_status(game, sched)
         home_team = convert_name_mlb_to_fangraphs(game["home_name"])
-        wpa = get_wpa(game["game_date"], home_team, double_header_flag, 2021)
+        season = date.split("/")[-1]
+        wpa = get_wpa(game["game_date"], home_team, double_header_flag, season)
         output.append({"mlb_game": game, "wpa": wpa})
     return output
 
