@@ -4,6 +4,7 @@ charset-normalizer==2.0.12
 click==8.0.4
 colorama==0.4.4
 idna==3.3
+json5==0.9.6
 MLB-StatsAPI==1.4.1
 mypy-extensions==0.4.3
 numpy==1.22.2
